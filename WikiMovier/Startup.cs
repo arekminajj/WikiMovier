@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using WikiMovier.Data;
 using WikiMovier.Models;
 using WikiMovier.Services;
@@ -35,7 +36,7 @@ namespace WikiMovier
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
-
+	        services.AddScoped<IMovie, MovieService>();
             services.AddMvc();
         }
 
