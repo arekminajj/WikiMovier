@@ -29,7 +29,7 @@ namespace WikiMovier.Services
 				//string url = "http://www.omdbapi.com/?i=tt3896198&apikey=2299f21b";
 				var Moviejson = await hc.GetStringAsync(url);
 				_MovieJson = Moviejson;
-				Debug.WriteLine(url);
+				
 			}
 			
 			return _MovieJson;

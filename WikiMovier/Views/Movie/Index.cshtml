@@ -1,11 +1,14 @@
 ﻿@model WikiMovier.Models.RootObject;
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Movie";
 }
-
-
-
-<p>@Model.Language</p>
-
-<p>@Model.Title</p>
+<div class="text-danger">Jeśli nie ma żadnego wyniku, upewnij się że wpisałeś/aś tytuł prawidłowo.</div>
+<p style="font-size: 40px;">@Model.Title</p>
+<p>Country: @Model.Country</p>
+<p>DVD: @Model.DVD</p>
+<p>Actors: @Model.Actors</p>
+<p>Director: @Model.Director</p>
+<p>Languange: @Model.Language</p>
+<p>IMDB rating: @Model.imdbRating</p>
+<p>Released: @Model.Released</p>
 
