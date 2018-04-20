@@ -15,7 +15,7 @@ namespace WikiMovier.Controllers
 			_movieService = movieService;
 		}
 
-		[Route("movie/search/{query}")]
+		
 		public async Task<IActionResult> Index(string query)
 		{
 			string json = await _movieService.DownlaodApiDataAsync(query);
